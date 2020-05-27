@@ -8,6 +8,7 @@ import (
 	"time"
 )
 
+// 使用计数器 进行限制流量
 type RequestLimitService struct {
 	Interval time.Duration
 	MaxCount int

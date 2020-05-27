@@ -5,6 +5,7 @@ import (
 	"time"
 )
 
+// 利用channel 缓冲机制  进行限制
 func Run(task_id, sleeptime, timeout int, ch chan string) {
 	ch_run := make(chan string)
 	go run(task_id, sleeptime, ch_run)
